@@ -1,4 +1,4 @@
-/* //função não parametrizada
+//função não parametrizada
 
  const n1 = 8;
 const n2 = 5;
@@ -40,10 +40,27 @@ console.log(mulheres);
 
 mulheres.map(el => {
     console.log(el)
-}) */
+})
 
 // função construtora anônima
 
 const f2 = new Function ('v3', 'v4', 'return v3 - v4')
 
 console.log(f2(7, 3));
+
+
+// sem arrow function
+
+const imc = function (peso, altura) {
+    return peso/(altura*altura)
+}
+
+console.log(imc(134, 1.85))
+
+//com arrow function
+
+const imc2 = (peso, altura)=>{
+    return peso/(altura*altura)
+}
+
+console.log(imc2(134, 1.85))
